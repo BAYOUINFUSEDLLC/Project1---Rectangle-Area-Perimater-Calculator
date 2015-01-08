@@ -1,41 +1,40 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor. Leamondo Prince Robinson II 01/07/15
+ * Leamondo Prince Robinson II 01/07/15
  */
-package project1;
+
 import java.util.Scanner;
-/**
- *
- * @author BA202
- */
+
 public class Project1 {
     public static void main(String[] args) {
-        // Print a welcome message
-        System.out.println("Welcome to Mike's Area and Perimeter calculator!");
+        // Introduction
+        System.out.println("Welcome to Leo's Area and Perimeter calculator!");
         
         // Create a Scanner object
         Scanner input = new Scanner(System.in);
         
         // Define some variables
-        double length, width, area, perimeter;
+        double length, breadth, area, perimeter;
         String choice = "y";
         
         // Create a conditional statement
         while (choice.equalsIgnoreCase("y"))
+        
         {
+        
         // Prompt the user for the length and width of their rectangle
         System.out.print("Length: ");
         length = input.nextDouble();
-        System.out.print("Width: ");
-        width = input.nextDouble();
+        System.out.print("Breadth: ");
+        breadth = input.nextDouble();
         
         // Calculate area and perimeter
-        area = length * width;
-        perimeter = length + length + width + width;
+        area = length * breadth;
+        perimeter = length + length + breadth + breadth;
         
         // Print the area and perimeter
         System.out.println("Area: " + area);
         System.out.println("Permimter: " + perimeter);
+        
         // Ask the user if they would like to continue
         System.out.println("Would you like to continue? (Y/N)");
         choice = input.next();
